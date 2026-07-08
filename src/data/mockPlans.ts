@@ -1,0 +1,55 @@
+import type { Plan } from "@/types/plan"
+
+export const initialPlans: Plan[] = [
+  {
+    id: "starter",
+    name: "Starter",
+    price: 199,
+    billingPeriod: "month",
+    description: "Everything you need to start accepting payments.",
+    features: [
+      "Up to 100 transactions/month",
+      "Basic analytics dashboard",
+      "Email support",
+      "1 team member",
+    ],
+    popular: false,
+    active: true,
+    buttonText: "Get Started",
+  },
+  {
+    id: "pro",
+    name: "Pro",
+    price: 499,
+    billingPeriod: "month",
+    description: "For growing businesses that need more power and insight.",
+    features: [
+      "Unlimited transactions",
+      "Advanced analytics & reports",
+      "Priority support",
+      "5 team members",
+      "Custom payment links",
+    ],
+    popular: true,
+    active: true,
+    buttonText: "Upgrade to Pro",
+  },
+  {
+    id: "enterprise",
+    name: "Enterprise",
+    price: 1499,
+    billingPeriod: "month",
+    description: "Dedicated infrastructure and support for large-scale teams.",
+    features: [
+      "Unlimited transactions",
+      "Dedicated account manager",
+      "24/7 premium support",
+      "Unlimited team members",
+      "Custom integrations",
+      "SLA guarantee",
+    ],
+    popular: false,
+    active: true,
+    buttonText: "Contact Sales",
+  },
+]
