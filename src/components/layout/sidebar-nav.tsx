@@ -1,5 +1,5 @@
 import { NavLink, useNavigate } from "react-router-dom"
-import { LayoutDashboard, CreditCard, Package, Settings, LogOut, Wallet } from "lucide-react"
+import { LayoutDashboard, CreditCard, Package, QrCode, Settings, LogOut, Wallet } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { useAuthStore } from "@/store/useAuthStore"
@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard, end: true },
   { to: "/dashboard/payments", label: "Payments", icon: CreditCard, end: false },
   { to: "/dashboard/plans", label: "Plans", icon: Package, end: false },
+  { to: "/dashboard/payment-settings", label: "Payment Settings", icon: QrCode, end: false },
   { to: "/dashboard/settings", label: "Settings", icon: Settings, end: false },
 ]
 
