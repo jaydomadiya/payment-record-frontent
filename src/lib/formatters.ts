@@ -6,6 +6,15 @@ export function formatCurrency(value: number): string {
   }).format(value)
 }
 
+export function formatCurrencyValue(value: number | undefined, currency = "INR"): string {
+  if (value === undefined || value === null) return "—"
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 2,
+  }).format(value)
+}
+
 export function formatNumber(value: number): string {
   return new Intl.NumberFormat("en-IN").format(value)
 }
